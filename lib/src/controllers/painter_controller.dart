@@ -433,7 +433,7 @@ class PainterControllerValue {
   }
 
   @override
-  int get hashCode => hashValues(
+  int get hashCode => Object.hash(
       hashList(_drawables), background, settings, selectedObjectDrawable);
 }
 
